@@ -1,3 +1,5 @@
+package arraylist;
+
 import java.util.*;
 
 public class CustomArrayList<E> implements List<E> {

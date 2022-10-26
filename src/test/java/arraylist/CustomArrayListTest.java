@@ -1,3 +1,5 @@
+package arraylist;
+
 import org.junit.jupiter.api.*;
 
 class CustomArrayListTest {

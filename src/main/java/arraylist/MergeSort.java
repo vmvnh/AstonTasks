@@ -1,3 +1,5 @@
+package arraylist;
+
 public class MergeSort {
   public static void mergeSort(int[] array, int size) {
     if (size < 2) return;
