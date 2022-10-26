@@ -14,7 +14,7 @@ public class FactoryMethodRun {
     Date date = dateFactory.createDate();
 
     // Вывод даты в консоль
-    date.printDate();
+    System.out.println("Актуальная дата: " + date.getDate());
   }
 
   /**
