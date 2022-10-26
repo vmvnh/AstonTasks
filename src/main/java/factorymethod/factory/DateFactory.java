@@ -1,4 +1,6 @@
-package factorymethod;
+package factorymethod.factory;
+
+import factorymethod.date.Date;
 
 /**
  * Фабрика дат.

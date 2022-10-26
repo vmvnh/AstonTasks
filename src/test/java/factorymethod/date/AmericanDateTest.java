@@ -1,5 +1,8 @@
-package factorymethod;
+package factorymethod.date;
 
+import factorymethod.date.AmericanDate;
+import factorymethod.date.Date;
+import factorymethod.date.RussianDate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

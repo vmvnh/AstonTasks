@@ -1,18 +1,21 @@
-package factorymethod;
+package factorymethod.factory;
 
+import factorymethod.date.AmericanDate;
+import factorymethod.factory.AmericanDateFactory;
+import factorymethod.factory.DateFactory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class RussianDateFactoryTest {
+class AmericanDateFactoryTest {
 
   @Test
-  void createDateRightObject() {
+  void createDateValidateObject() {
     // Создание объекта актуальной даты.
-    DateFactory dateFactory = new RussianDateFactory();
+    DateFactory dateFactory = new AmericanDateFactory();
     var result = dateFactory.createDate();
 
     // Создание ожидаемого результата
-    var expectedResult = new RussianDate();
+    var expectedResult = new AmericanDate();
 
     // Сравнение результатов
     Assertions.assertEquals(expectedResult, result);

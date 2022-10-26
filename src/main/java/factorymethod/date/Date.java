@@ -1,4 +1,4 @@
-package factorymethod;
+package factorymethod.date;
 
 /**
  * Дата.

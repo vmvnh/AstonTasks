@@ -1,17 +1,21 @@
-package factorymethod;
+package factorymethod.factory;
+
+import factorymethod.date.Date;
+import factorymethod.date.RussianDate;
 
 /**
- * Фабрика американской даты.
+ * Фабрика российской даты.
  */
-public class AmericanDateFactory implements DateFactory{
+public class RussianDateFactory implements DateFactory {
+
   /**
-   * Возвращает сущность американской даты.
+   * Возвращает сущность российской даты.
    *
-   * @return Американская дата.
+   * @return Российская дата.
    */
   @Override
   public Date createDate() {
-    return new AmericanDate();
+    return new RussianDate();
   }
 
   // Переопределение метода для сравнения объектов.

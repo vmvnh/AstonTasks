@@ -1,11 +1,11 @@
-package factorymethod;
+package factorymethod.date;
 
 import java.time.LocalDate;
 
 /**
- * Американский формат даты.
+ * Российский формат даты.
  */
-public class AmericanDate implements Date {
+public class RussianDate implements Date {
   int day, month, year;
 
   /**
@@ -13,8 +13,8 @@ public class AmericanDate implements Date {
    */
   @Override
   public String getDate() {
-    // Формат американской даты мм/дд/гггг
-    return month + "/" + day + "/" + year;
+    // Формат российской даты дд.мм.гггг
+    return day + "." + month + "." + year;
   }
 
   // Переопределение метода для сравнения объектов.
@@ -29,7 +29,7 @@ public class AmericanDate implements Date {
   /**
    * Конструктор класса.
    */
-  public AmericanDate() {
+  public RussianDate() {
     LocalDate date = LocalDate.now();
     this.day = date.getDayOfMonth();
     this.month = date.getMonthValue();

@@ -1,5 +1,10 @@
 package factorymethod;
 
+import factorymethod.date.Date;
+import factorymethod.factory.AmericanDateFactory;
+import factorymethod.factory.DateFactory;
+import factorymethod.factory.RussianDateFactory;
+
 public class FactoryMethodRun {
 
   /**
