@@ -12,9 +12,18 @@ public class RussianDate implements Date {
    * Вывод актуальной даты.
    */
   @Override
-  public void printDate() {
+  public String getDate() {
     // Формат российской даты дд.мм.гггг
-    System.out.println("Актуальная дата: " + day + "." + month + "." + year);
+    return day + "." + month + "." + year;
+  }
+
+  // Переопределение метода для сравнения объектов.
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Date that = (Date) o;
+    return this.getDate().equals(that.getDate());
   }
 
   /**

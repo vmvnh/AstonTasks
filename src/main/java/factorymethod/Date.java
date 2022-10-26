@@ -8,5 +8,5 @@ public interface Date {
   /**
    * Вывод актуальной даты.
    */
-  void printDate();
+  String getDate();
 }

@@ -12,9 +12,18 @@ public class AmericanDate implements Date {
    * Вывод актуальной даты.
    */
   @Override
-  public void printDate() {
+  public String getDate() {
     // Формат американской даты мм/дд/гггг
-    System.out.println("Актуальная дата: " + month + "/" + day + "/" + year);
+    return month + "/" + day + "/" + year;
+  }
+
+  // Переопределение метода для сравнения объектов.
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Date that = (Date) o;
+    return this.getDate().equals(that.getDate());
   }
 
   /**
