@@ -8,7 +8,7 @@ import decorator.salary.Salary;
 public class KitchenDecorator extends SalaryDecorator {
 
   // Размер взноса на содержание кухни
-  int payment = 1000;
+  int payment = 200;
 
   @Override
   public int getSalary() {
